@@ -1,0 +1,64 @@
+/* google font link */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Header section start */
+nav {
+    padding: 30px 130px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+nav,
+.logo,
+.nav-items,
+.nav-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-items,
+.nav-items a,
+.nav-icon-items {
+    margin-right: 20px;
+}
+
+.span-g {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo-name {
+    color: #0B0223;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.nav-items a,
+.nav-icon-items {
+    text-decoration: none;
+    color: #3C354F;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.nav-icon {
+    width: 16.375rem;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    background: rgba(11, 2, 35, 0.10);
+    padding-left: 20px;
+}
+/* Header section start */
