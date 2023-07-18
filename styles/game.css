@@ -61,4 +61,21 @@ nav,
     background: rgba(11, 2, 35, 0.10);
     padding-left: 20px;
 }
-/* Header section start */
+
+/* Header section end */
+@media screen and (max-width: 576px) {
+
+    nav,
+    .nav-items {
+        flex-direction: column;
+    }
+
+    nav,
+    .nav-items {
+        gap: 1.5rem;
+    }
+    nav{
+        padding: 50px;
+    }
+
+}
