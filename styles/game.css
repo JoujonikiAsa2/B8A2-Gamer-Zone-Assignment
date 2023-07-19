@@ -21,6 +21,10 @@
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
 
 }
+button:hover{
+    cursor: pointer;
+    color: #3C354F;
+}
 
 .section-title {
     color: #0B0223;
@@ -63,7 +67,7 @@ nav,
 
 .logo-name {
     color: #0B0223;
-    font-size: 45px;
+    font-size: 2.8rem;
     font-weight: 700;
 }
 
@@ -228,13 +232,15 @@ nav,
 
 /* Play instant style */
 .play-instant-container {
-    display: flex;flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     gap: 15%;
     padding-right: 100px;
 }
-.play-instant-info{
+
+.play-instant-info {
     padding-bottom: 120px;
     display: flex;
     flex-direction: column;
@@ -261,10 +267,10 @@ nav,
 }
 
 .small {
-    width:300px;
+    width: 300px;
     height: 290px;
     position: relative;
-    bottom: 150px;
+    bottom: 120px;
     left: 450px;
 }
 
@@ -276,23 +282,26 @@ nav,
     text-align: center;
     gap: 10px;
 }
-.game-features-container2{
+
+.game-features-container2 {
     align-items: center;
     justify-content: center;
     padding: 0px 120px;
 
 }
-.game-features-container1{
+
+.game-features-container1 {
     align-items: center;
 
 }
+
 .features {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0px 130px;
     gap: 30px;
-    padding:0px 130px 120px 130px;
+    padding: 0px 130px 100px 130px;
 }
 
 .feature-item img {
@@ -323,7 +332,57 @@ nav,
     color: #FF42A5;
 }
 
-/* Header style end */
+/*gamefeatures style end  */
+
+.footer {
+    width: 100%;
+    background-color: #0B0223;
+    color: #FFF;
+    padding: 50px 0px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.foter-logo-name {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.footer-link-description,
+.social-link,
+.footer-service,
+.footer-copyright-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer-link-description,
+.footer-service {
+    padding: 30px 0px;
+}
+
+.footer-link-description {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.footer-service,
+.footer-copyright-text {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 @media screen and (max-width: 576px) {
     body {
         padding: 30px auto;
