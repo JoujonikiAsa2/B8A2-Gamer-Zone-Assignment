@@ -166,7 +166,7 @@ nav,
     -webkit-text-fill-color: transparent;
 }
 
-.game-description {
+.section-description {
     text-align: center;
     color: #534C64;
     font-size: 1.12rem;
@@ -179,22 +179,23 @@ nav,
 .game-card-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
 }
-
+.game-card img{
+    width: 280px;
+    height: 290px;
+}
 .card-caption {
-    width: 342px;
+    width: 280px;
     color: #534C64;
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 30px;
     padding-top: 20px;
 }
-
-
 .game-card-container .game-card .bonus-part {
-    width: 342px;
-    height: 400px;
+    width: 280px;
+    height: 290px;
     border-radius: 16px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(../images/Rectangle7.png);
     position: relative;
@@ -220,7 +221,16 @@ nav,
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+/* Play instant style */
+.play-instant-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.play-instant-image{
+    display: flex;
+    flex-direction: column;
+}
 /* Header style end */
 @media screen and (max-width: 576px) {
     body {
