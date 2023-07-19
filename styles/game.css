@@ -217,6 +217,7 @@ nav,
 .watch-now {
     display: none;
 }
+
 .game-card:hover .watch-now {
     cursor: pointer;
     width: 113px;
@@ -228,13 +229,15 @@ nav,
     color: #FF42A5;
 
 }
-.game-card-container .game-card:hover  .game-card .bonus-part {
+
+.game-card-container .game-card:hover .game-card .bonus-part {
     width: 280px;
     height: 290px;
     border-radius: 16px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(../images/Rectangle7.png);
     position: relative;
 }
+
 .watch-now-design {
     font-size: 1.25rem;
     font-weight: 600;
@@ -289,24 +292,11 @@ nav,
 }
 
 /* gamefeatures style */
-.game-features-container1,
-.game-features-container2 {
+.game-features-container {
     display: flex;
-    font-size: 1rem;
-    text-align: center;
-    gap: 10px;
-}
-
-.game-features-container2 {
-    align-items: center;
     justify-content: center;
-    padding: 0px 120px;
-
-}
-
-.game-features-container1 {
-    align-items: center;
-
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 .features {
@@ -324,7 +314,7 @@ nav,
 }
 
 .feature-item {
-    width: 500px;
+    width: 150px;
     height: 30px;
     font-size: 0.8rem;
     color: #0B0223;
@@ -348,11 +338,11 @@ nav,
 
 /*gamefeatures style end  */
 
-.footer {
-    width: 100%;
+footer {
+    max-width: 100%;
     background-color: #0B0223;
     color: #FFF;
-    padding: 50px 0px;
+    padding: 50px;
 }
 
 .footer-logo {
@@ -379,7 +369,7 @@ nav,
 
 .footer-link-description,
 .footer-service {
-    padding: 30px 0px;
+    padding: 30px;
 }
 
 .footer-link-description {
@@ -390,19 +380,14 @@ nav,
 }
 
 .footer-service,
-.footer-copyright-text {
+.footer-copyright-text{
     color: rgba(255, 255, 255, 0.60);
     text-align: center;
     font-size: 1rem;
     font-weight: 500;
 }
 
-@media screen and (max-width: 576px) {
-    body {
-        padding: 30px auto;
-        margin: 0;
-    }
-
+@media screen and (max-width: 575px) {
     nav,
     .nav-items,
     .game-card-container,
@@ -414,7 +399,9 @@ nav,
     .nav-items {
         gap: 1.5rem;
     }
-
+    .logo-name{
+        font-size: 2rem;
+    }
     nav {
         box-shadow: none;
     }
@@ -435,24 +422,65 @@ nav,
         align-items: center;
     }
 
+    .banner-info {
+        position: relative;
+        width: 365px;
+        height: 100%;
+        left: 0%;
+        padding-bottom: 70px;
+    }
+
+    .bg-image img {
+        width: 80%;
+        height: 80vh;
+    }
+
+    .bg-image {
+        position: absolute;
+        top: 145%;
+        left: 15%;
+    }
+
     .game-card-container,
     .play-instant-container {
         align-items: center;
-        justify-content: center;
+    }
+
+    .online-game-container {
+        padding-top: 0px;
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .goat {
-        font-size: 4rem;
+        font-size: 3rem;
+    }
+
+    .banner li {
+        font-size: 1rem;
     }
 
     .game-title {
         font-size: 2rem;
     }
-
+    .play-instant-container{
+        width: 100%;
+    }
+    .big{
+        width: 240px;
+        height: 270px;
+        left: 0px;
+        top: 0px;
+        padding-bottom: 20px;
+    }
+    .small{
+        display: none;
+    }
+    .play-instant-container{
+        display: flex;
+    }
     .play-instant-container {
         gap: 50px;
         align-items: center;
@@ -473,17 +501,265 @@ nav,
         padding: 10px;
     }
 
-    .big {
-        width: 250px;
-        height: 300px;
-        position: relative;
-        left: 100px;
+    .feature-item img {
+        width: 24px;
+        height: 24px;
+    }
+    .feature-item {
+        max-width: 300px;
+        height: 30px;
+        font-size: 0.8rem;
+        color: #0B0223;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 100px;
+        padding: 10px;
     }
 
-    .small {
-        width: 180px;
-        height: 170px;
+    .feature-item:hover {
+        cursor: pointer;
+        background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+        border-radius: 30px;
+        background: #FFF;
+        border: 1px solid #FF42A5;
+        color: #FF42A5;
+    }
+
+    .game-features-container {
+        display: grid;
+        grid-template-columns: repeat(3, 120px);
+        column-gap: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    footer {
+        width: 100%;
+        background-color: #0B0223;
+        color: #FFF;
+        padding: 50px 0px;
+    }
+    
+    .footer-logo {
+        gap: 10px;
+    }
+    
+    .foter-logo-name {
+        font-size: 2rem;
+    }
+    
+    .footer-link-description,
+    .social-link,
+    .footer-service,
+    .footer-copyright-text {
+        gap: 20px;
+    }
+    
+    .footer-link-description,
+    .footer-service {
+        padding: 10px 0px;
+    }
+    
+    .footer-link-description {
+        font-size: 0.8rem;
+    }
+    
+    .footer-service,
+    .footer-copyright-text {
+        font-size: 0.8rem;
+    }
+    .social-link img{
+        width: 24px;
+        height: 24px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width:920px){
+    nav,
+    .nav-items,
+    .game-card-container,
+    .play-instant-container {
+        flex-direction: column;
+    }
+
+    nav,
+    .nav-items {
+        gap: 1.5rem;
+    }
+    .logo-name{
+        font-size: 2rem;
+    }
+    nav {
+        box-shadow: none;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .banner .banner-image img {
+        width: 350px;
+        height: 400px;
+        padding-left: 0px;
+    }
+
+    .banner-info-center {
+        display: flex;
+        align-items: center;
+    }
+
+    .banner-info {
         position: relative;
-        bottom: 110px;
+        width: 365px;
+        height: 100%;
+        left: 0%;
+        padding-bottom: 70px;
+    }
+
+    .bg-image img {
+        width: 60vw;
+        height: 40vh;
+    }
+
+    .bg-image {
+        position: absolute;
+        top: 70%;
+        left: 20%;
+    }
+
+    .game-card-container,
+    .play-instant-container {
+        align-items: center;
+    }
+
+    .online-game-container {
+        padding-top: 0px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .goat {
+        font-size: 3rem;
+    }
+
+    .banner li {
+        font-size: 1rem;
+    }
+
+    .game-title {
+        font-size: 2rem;
+    }
+    .play-instant-container{
+        width: 100%;
+    }
+    .big{
+        width: 240px;
+        height: 270px;
+        left: 0px;
+        top: 0px;
+        padding-bottom: 20px;
+    }
+    .small{
+        display: none;
+    }
+    .play-instant-container{
+        display: flex;
+    }
+    .play-instant-container {
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .play-instant-info {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .play-instant-title,
+    .play-instant-description {
+        text-align: center;
+        width: 280px;
+        height: 100px;
+        padding: 10px;
+    }
+
+    .feature-item img {
+        width: 24px;
+        height: 24px;
+    }
+    .feature-item {
+        max-width: 300px;
+        height: 30px;
+        font-size: 0.8rem;
+        color: #0B0223;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 100px;
+        padding: 10px;
+    }
+
+    .feature-item:hover {
+        cursor: pointer;
+        background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+        border-radius: 30px;
+        background: #FFF;
+        border: 1px solid #FF42A5;
+        color: #FF42A5;
+    }
+
+    .game-features-container {
+        display: grid;
+        grid-template-columns: repeat(3, 120px);
+        column-gap: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    footer {
+        width: 100%;
+        background-color: #0B0223;
+        color: #FFF;
+        padding: 50px;
+    }
+    
+    .footer-logo {
+        gap: 10px;
+    }
+    
+    .foter-logo-name {
+        font-size: 2rem;
+    }
+    
+    .footer-link-description,
+    .social-link,
+    .footer-service,
+    .footer-copyright-text {
+        gap: 20px;
+    }
+    
+    .footer-link-description,
+    .footer-service {
+        padding: 10px 0px;
+    }
+    
+    .footer-link-description {
+        font-size: 0.8rem;
+    }
+    
+    .footer-service,
+    .footer-copyright-text {
+        font-size: 0.8rem;
+    }
+    .social-link img{
+        width: 24px;
+        height: 24px;
     }
 }
