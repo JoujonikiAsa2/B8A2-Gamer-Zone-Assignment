@@ -87,26 +87,31 @@ nav,
     align-items: center;
     padding: 30px 120px;
 }
+
 .banner-title {
     color: #0B0223;
     font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
 }
-.banner-info{
+
+.banner-info {
     position: relative;
     width: 365px;
     height: 400px;
 }
-.bg-image img{
+
+.bg-image img {
     height: 100%;
     width: 80%;
 }
-.bg-image{
+
+.bg-image {
     position: absolute;
     top: 120px;
     left: 0px;
 }
+
 .banner-title .goat {
     font-size: 5.9375rem;
     font-weight: 800;
@@ -135,9 +140,13 @@ nav,
 
 /* Header style end */
 @media screen and (max-width: 576px) {
+    body {
+        padding: 30px auto;
+        margin: 0;
+    }
 
     nav,
-    .nav-items {
+    .nav-items{
         flex-direction: column;
     }
 
@@ -147,18 +156,19 @@ nav,
     }
 
     nav {
-        padding: 0px;
         box-shadow: none;
-        margin: 0px;
     }
     .banner{
         flex-direction: column-reverse;
-        margin: 0px;
-        padding: 0px;
+        gap: 50px;
     }
-    .banner-image img{
-        max-width: 400px;
-        height: auto;
+    .banner .banner-image img{
+        width: 350px;
+        height:400px;
+        padding-left: 0px;
     }
-
+    .banner-info-center{
+        display: flex;
+        align-items: center;
+    }
 }
