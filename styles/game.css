@@ -144,6 +144,7 @@ nav,
     padding-top: 10px;
     padding-bottom: 10px;
 }
+/* banner style end */
 
 /* Online game style start*/
 .online-game-container {
@@ -225,11 +226,34 @@ nav,
 .play-instant-container{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 50px;
 }
 .play-instant-image{
     display: flex;
     flex-direction: column;
+}
+.play-instant-title{
+    text-transform: none;
+    width: 345px;
+    height: 180px;
+    text-align: right;
+}
+.play-instant-description{
+    text-align: right;
+    width: 345px;
+    height: 90px;
+    padding: 10px;
+}
+.big{
+    position: relative;
+    left: 175px;
+}
+.small{
+    width: 250px;
+    height: 270px;
+    position: relative;
+    bottom:200px;
 }
 /* Header style end */
 @media screen and (max-width: 576px) {
