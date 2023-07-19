@@ -86,6 +86,9 @@ nav,
     align-items: center;
     padding: 30px 120px;
 }
+.banner-info{
+    background-image: url(../images/Group\ 14.png);
+}
 
 .banner-title {
     color: #0B0223;
