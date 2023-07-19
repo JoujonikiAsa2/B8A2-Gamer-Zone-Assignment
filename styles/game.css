@@ -103,17 +103,19 @@ nav,
 .banner-info {
     position: relative;
     width: 365px;
-    height: 100vh;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 70px;
 }
 
 .bg-image img {
-    height: 100%;
+    height: 100vh;
     width: 80%;
 }
 
 .bg-image {
     position: absolute;
-    top: 120px;
+    top: 20%;
     left: 0px;
 }
 
@@ -213,18 +215,8 @@ nav,
 } */
 
 .watch-now {
-    display: hidden;
+    display: none;
 }
-
-/* .watch-now {
-    width: 113px;
-    height: 60px;
-    text-align: center;
-    position: relative;
-    left: 90px;
-    bottom: 270px;
-    color: #FF42A5;
-} */
 .game-card:hover .watch-now {
     cursor: pointer;
     width: 113px;
@@ -236,7 +228,7 @@ nav,
     color: #FF42A5;
 
 }
-.game-card:hover .game-card-container .game-card .bonus-part {
+.game-card-container .game-card:hover  .game-card .bonus-part {
     width: 280px;
     height: 290px;
     border-radius: 16px;
