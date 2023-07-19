@@ -11,19 +11,14 @@
 .btn-primary {
     margin-top: 20px;
     display: inline-flex;
-    padding: 21px 40px;
+    padding: 15px 30px;
     color: #FFF;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
     border-radius: 48px;
     border: 0;
-    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
 
-}
-button:hover{
-    cursor: pointer;
-    color: #3C354F;
 }
 
 .section-title {
@@ -81,7 +76,7 @@ nav,
 }
 
 .nav-icon {
-    width: 16.375rem;
+    width: 18.375rem;
     height: 3.5rem;
     border-radius: 0.5rem;
     background: rgba(11, 2, 35, 0.10);
@@ -108,7 +103,7 @@ nav,
 .banner-info {
     position: relative;
     width: 365px;
-    height: 400px;
+    height: 100vh;
 }
 
 .bg-image img {
@@ -146,6 +141,14 @@ nav,
     font-weight: 500;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+#sign-in {
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+}
+
+.go {
+    background-color: #4EC5F7;
 }
 
 /* banner style end */
@@ -201,26 +204,45 @@ nav,
     padding-top: 20px;
 }
 
-.game-card-container .game-card .bonus-part {
+/* .game-card-container .game-card .bonus-part {
     width: 280px;
     height: 290px;
     border-radius: 16px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(../images/Rectangle7.png);
     position: relative;
-    z-index: 5;
-}
+} */
 
 .watch-now {
+    display: hidden;
+}
+
+/* .watch-now {
     width: 113px;
     height: 60px;
     text-align: center;
     position: relative;
-    left: 120px;
-    bottom: 300px;
-    z-index: 10;
+    left: 90px;
+    bottom: 270px;
     color: #FF42A5;
-}
+} */
+.game-card:hover .watch-now {
+    cursor: pointer;
+    width: 113px;
+    height: 60px;
+    text-align: center;
+    position: relative;
+    left: 90px;
+    bottom: 270px;
+    color: #FF42A5;
 
+}
+.game-card:hover .game-card-container .game-card .bonus-part {
+    width: 280px;
+    height: 290px;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(../images/Rectangle7.png);
+    position: relative;
+}
 .watch-now-design {
     font-size: 1.25rem;
     font-weight: 600;
