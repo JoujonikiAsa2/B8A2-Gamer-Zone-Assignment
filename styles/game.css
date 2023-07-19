@@ -72,16 +72,39 @@ nav,
     padding: 30px 120px;
 }
 
+.banner-title {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-title .goat {
+    font-size: 5.9375rem;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .banner li {
     list-style: none;
 }
-.banner li{
+
+.banner li {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-.banner-image img{
+
+.banner-image img {
     width: 600px;
     height: 500px;
     flex-shrink: 0;
