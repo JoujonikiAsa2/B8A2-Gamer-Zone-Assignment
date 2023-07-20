@@ -293,12 +293,12 @@ nav,
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
-    margin: 0 15vw;
+    margin: 0 auto;
 }
 
 .features {
     display: flex;
-    gap: 60px;
+    gap: 5vw;
     margin-bottom: 100px;
 }
 
@@ -308,8 +308,8 @@ nav,
 }
 
 .feature-item {
-    width: 140px;
-    height: 30px;
+    width: 15vw;
+    height: 5vh;
     font-size: 0.8rem;
     color: #0B0223;
     font-weight: 600;
@@ -653,6 +653,7 @@ footer {
 
     nav {
         box-shadow: none;
+        padding: 0;
     }
 
     .banner {
@@ -693,6 +694,7 @@ footer {
     .game-card-container,
     .play-instant-container {
         align-items: center;
+        justify-content: center;
     }
 
     .online-game-container {
@@ -715,7 +717,17 @@ footer {
         font-size: 2rem;
         height: 100%;
     }
-
+    .game-card{
+        width: 25vw;
+        height: auto;
+    }
+    .game-card .image {
+        width: 20vw;
+        height: 40vh;
+    }
+    .card-caption{
+        width: 60vw;
+    }
     .play-instant-container {
         width: 100%;
     }
