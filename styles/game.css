@@ -461,7 +461,10 @@ footer {
 
     .game-card .image {
         width: 60vw;
-        height: 50vh;
+        height: 40vh;
+    }
+    .card-caption{
+        width: 60vw;
     }
 
     .section-title {
