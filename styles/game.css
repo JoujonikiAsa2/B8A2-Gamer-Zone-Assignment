@@ -108,13 +108,13 @@ nav,
 }
 
 .bg-image img {
-    height: 100vh;
-    width: 80%;
+    height: 85vh;
+    width: 50vw;
 }
 
 .bg-image {
     position: absolute;
-    top: 20%;
+    top: 19vh;
     left: 0px;
 }
 
@@ -192,12 +192,12 @@ nav,
 }
 
 .game-card img {
-    width: 280px;
-    height: 290px;
+    width: 20vw;
+    height: 50vh;
 }
 
 .card-caption {
-    width: 280px;
+    width: 20vw;
     color: #534C64;
     font-size: 1.25rem;
     font-weight: 500;
@@ -219,7 +219,7 @@ nav,
 }
 
 .image {
-    width: 280px;
+    width: 20vw;
     height: auto;
     backface-visibility: hidden;
 }
@@ -461,11 +461,11 @@ footer {
     }
 
     .game-card .image {
-        width: 60vw;
+        width: 80vw;
         height: 40vh;
     }
     .card-caption{
-        width: 60vw;
+        width: 80vw;
     }
 
     .section-title {
@@ -654,6 +654,7 @@ footer {
     nav {
         box-shadow: none;
         padding: 0;
+        padding-top: 10vh;
     }
 
     .banner {
@@ -674,21 +675,13 @@ footer {
 
     .banner-info {
         position: relative;
-        width: 365px;
-        height: 100%;
+        width: 40vw;
+        height: auto;
         left: 0%;
-        padding-bottom: 70px;
     }
 
     .bg-image img {
-        width: 60vw;
-        height: 40vh;
-    }
-
-    .bg-image {
-        position: absolute;
-        top: 70%;
-        left: 20%;
+        display: none;
     }
 
     .game-card-container,
@@ -718,15 +711,17 @@ footer {
         height: 100%;
     }
     .game-card{
-        width: 25vw;
+        width: 50vw;
         height: auto;
     }
     .game-card .image {
-        width: 20vw;
-        height: 40vh;
+        width: 50vw;
+        height: 60vh;
     }
     .card-caption{
         width: 60vw;
+        align-items: center;
+        justify-content: center;
     }
     .play-instant-container {
         width: 100%;
@@ -741,6 +736,9 @@ footer {
         gap: 50px;
         align-items: center;
         justify-content: center;
+        margin: 0 auto;
+        padding-right: 0;
+        padding-bottom: 0;
     }
 
     .play-instant-info {
@@ -797,7 +795,7 @@ footer {
         column-gap: 30px;
         padding-left: 0px;
         padding-right: 0px;
-        padding-top: 30vh;
+        padding-top: 20vh;
     }
 
     .big {
