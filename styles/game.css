@@ -193,24 +193,10 @@ nav,
 }
 
 .game-card img {
-    width: 276px;
-    height: 286px;
+    width: 280px;
+    height: 290px;
 }
-.game-card{
-    position: relative;
-    display: inline-block;
-}
-.game-card .watch-now{
-    position: absolute;
-    top:120px;
-    left:0px;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
+
 .card-caption {
     width: 280px;
     color: #534C64;
@@ -220,33 +206,6 @@ nav,
     padding-top: 20px;
 }
 
-/* .game-card-container .game-card .bonus-part {
-    width: 280px;
-    height: 290px;
-    border-radius: 16px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(../images/Rectangle7.png);
-    position: relative;
-} */
-
-/* .watch-now {
-    display: none;
-} */
-
-.game-card img:hover{
-    cursor: pointer;
-    border: 2px solid #FF42A5;
-    border-radius: 16px;
-    
-}
-
-.game-card-container .game-card:hover .game-card .bonus-part {
-    width: 280px;
-    height: 290px;
-    border-radius: 16px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(../images/Rectangle7.png);
-    position: relative;
-}
-
 .watch-now-design {
     font-size: 1.25rem;
     font-weight: 600;
@@ -254,6 +213,35 @@ nav,
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.game-card {
+    position: relative;
+}
+
+.image {
+    width: 280px;
+    height: auto;
+    backface-visibility: hidden;
+}
+
+.overlay {
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.game-card:hover .image {
+    cursor: pointer;
+    border: 1px solid #FF42A5;
+    border-radius: 16px;
+}
+
+.game-card:hover .overlay {
+    opacity: 1;
 }
 
 /* Play instant style */
@@ -387,7 +375,7 @@ footer {
 }
 
 .footer-service,
-.footer-copyright-text{
+.footer-copyright-text {
     color: rgba(255, 255, 255, 0.60);
     /* text-align: center; */
     font-size: 1rem;
@@ -395,6 +383,7 @@ footer {
 }
 
 @media screen and (max-width: 575px) {
+
     nav,
     .nav-items,
     .game-card-container,
@@ -406,9 +395,11 @@ footer {
     .nav-items {
         gap: 1.5rem;
     }
-    .logo-name{
+
+    .logo-name {
         font-size: 2rem;
     }
+
     nav {
         box-shadow: none;
     }
@@ -468,17 +459,20 @@ footer {
     .banner li {
         font-size: 1rem;
     }
-    .bg-image img{
+
+    .bg-image img {
         display: none;
     }
 
     .game-title {
         font-size: 2rem;
     }
-    .play-instant-container{
+
+    .play-instant-container {
         width: 100%;
     }
-    .big{
+
+    .big {
         width: 240px;
         height: 270px;
         left: 0px;
@@ -487,12 +481,15 @@ footer {
         padding-left: 0px;
         justify-content: flex-start;
     }
-    .small{
+
+    .small {
         display: none;
     }
-    .play-instant-container{
+
+    .play-instant-container {
         display: flex;
     }
+
     .play-instant-container {
         gap: 50px;
         align-items: center;
@@ -512,7 +509,8 @@ footer {
         height: 100px;
         padding: 10px;
     }
-    .feature{
+
+    .feature {
         justify-content: center;
         gap: 20px;
     }
@@ -521,6 +519,7 @@ footer {
         width: 24px;
         height: 24px;
     }
+
     .feature-item {
         max-width: 150px;
         height: 25px;
@@ -552,6 +551,7 @@ footer {
         align-items: center;
 
     }
+
     footer {
         width: 100vw;
         height: auto;
@@ -559,51 +559,57 @@ footer {
         color: #FFF;
         justify-content: flex-start;
     }
-    
+
     .footer-logo {
         gap: 10px;
     }
-    
+
     .foter-logo-name {
         font-size: 2rem;
     }
-    
+
     .footer-link-description,
     .social-link,
     .footer-service,
     .footer-copyright-text {
         gap: 20px;
     }
-    
-    .footer-link-description{
+
+    .footer-link-description {
         display: grid;
-        grid-template-columns: repeat(3,100px);
+        grid-template-columns: repeat(3, 100px);
         padding: 5px 0px;
     }
-    .social-link{
+
+    .social-link {
         display: grid;
-        grid-template-columns: repeat(3,50px);
+        grid-template-columns: repeat(3, 50px);
         padding: 5px 0px;
     }
-    .footer-service{
+
+    .footer-service {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         padding: 5px 0px;
     }
+
     .footer-link-description {
         font-size: 0.8rem;
     }
-    
+
     .footer-service,
     .footer-copyright-text {
         font-size: 0.8rem;
     }
-    .social-link img{
+
+    .social-link img {
         width: 24px;
         height: 24px;
     }
 }
-@media screen and (min-width: 576px) and (max-width:920px){
+
+@media screen and (min-width: 576px) and (max-width:920px) {
+
     nav,
     .nav-items,
     .game-card-container,
@@ -615,9 +621,11 @@ footer {
     .nav-items {
         gap: 1.5rem;
     }
-    .logo-name{
+
+    .logo-name {
         font-size: 2rem;
     }
+
     nav {
         box-shadow: none;
     }
@@ -681,22 +689,27 @@ footer {
     .game-title {
         font-size: 2rem;
     }
-    .play-instant-container{
+
+    .play-instant-container {
         width: 100%;
     }
-    .big{
+
+    .big {
         width: 240px;
         height: 270px;
         left: 0px;
         top: 0px;
         padding-bottom: 20px;
     }
-    .small{
+
+    .small {
         display: none;
     }
-    .play-instant-container{
+
+    .play-instant-container {
         display: flex;
     }
+
     .play-instant-container {
         gap: 50px;
         align-items: center;
@@ -715,7 +728,8 @@ footer {
         width: 280px;
         height: 100px;
     }
-    .feature{
+
+    .feature {
         padding-left: 0px;
         padding-right: 0px;
         justify-content: flex-start;
@@ -725,6 +739,7 @@ footer {
         width: 24px;
         height: 24px;
     }
+
     .feature-item {
         max-width: 300px;
         height: 30px;
@@ -755,6 +770,7 @@ footer {
         padding-left: 0px;
         padding-right: 0px;
     }
+
     .footer {
         /* width: 100%; */
         /* background-color: #0B0223; */
@@ -762,15 +778,15 @@ footer {
         padding: 50px 0px;
         justify-content: center;
     }
-    
+
     .footer-logo {
         gap: 10px;
     }
-    
+
     .foter-logo-name {
         font-size: 2rem;
     }
-    
+
     .footer-link-description,
     .social-link,
     .footer-service,
@@ -778,21 +794,22 @@ footer {
         gap: 20px;
         flex-wrap: wrap;
     }
-    
+
     .footer-link-description,
     .footer-service {
         padding: 10px 0px;
     }
-    
+
     .footer-link-description {
         font-size: 0.8rem;
     }
-    
+
     .footer-service,
     .footer-copyright-text {
         font-size: 0.8rem;
     }
-    .social-link img{
+
+    .social-link img {
         width: 24px;
         height: 24px;
     }
