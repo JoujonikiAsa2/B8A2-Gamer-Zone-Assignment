@@ -249,8 +249,8 @@ nav,
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    gap: 15%;
-    padding-right: 100px;
+    gap: 10vh;
+    padding-bottom: 30vh;
 }
 
 .play-instant-info {
@@ -273,18 +273,18 @@ nav,
 }
 
 .big {
-    width: 480px;
-    height: 500px;
+    width: 30vw;
+    height: 60vh;
     position: relative;
-    left: 135px;
+    left: 0;
 }
 
 .small {
-    width: 300px;
-    height: 290px;
+    width:15vw;
+    height: 40vh;
     position: relative;
-    bottom: 120px;
-    left: 450px;
+    top: 15vh;
+    right: 10vw;
 }
 
 /* gamefeatures style */
