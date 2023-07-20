@@ -293,11 +293,12 @@ nav,
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
+    margin: 0 15vw;
 }
 
 .features {
     display: flex;
-    gap: 30px;
+    gap: 60px;
     margin-bottom: 100px;
 }
 
@@ -533,6 +534,7 @@ footer {
 
     .feature {
         justify-content: center;
+        align-items: center;
 
     }
 
@@ -570,6 +572,7 @@ footer {
         column-gap: 10px;
         justify-content: center;
         align-items: center;
+        margin: 6vw;
 
     }
 
