@@ -80,7 +80,7 @@ nav,
     height: 3.5rem;
     border-radius: 0.5rem;
     background: rgba(11, 2, 35, 0.10);
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 /* header end */
@@ -88,9 +88,8 @@ nav,
 /* Banner style start */
 .banner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 30px 120px;
 }
 
 .banner-title {
@@ -162,13 +161,13 @@ nav,
 }
 
 .game-title {
+    padding-top: 15vh;
     text-align: center;
     text-transform: none;
     font-weight: 700;
 }
 
-.funny {
-
+.color {
 
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
@@ -183,7 +182,7 @@ nav,
     font-weight: 400;
     line-height: 1.875rem;
     padding-top: 10px;
-    padding-bottom: 30px
+    padding-bottom: 30px;
 }
 
 .game-card-container {
@@ -333,10 +332,11 @@ nav,
 /*gamefeatures style end  */
 
 footer {
-    max-width: 100%;
+    width: 100vw;
     background-color: #0B0223;
     color: #FFF;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     justify-content: center;
 }
 
@@ -393,11 +393,16 @@ footer {
 
     nav,
     .nav-items {
+        font-size: 1rem;
         gap: 1.5rem;
     }
 
+    .nav-icon {
+        width: 18.375rem;
+    }
+
     .logo-name {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     nav {
@@ -410,9 +415,9 @@ footer {
     }
 
     .banner .banner-image img {
-        width: 350px;
-        height: 400px;
-        padding-left: 0px;
+        width: 100%;
+        height: 90%;
+        padding: 0;
     }
 
     .banner-info-center {
@@ -421,10 +426,11 @@ footer {
     }
 
     .banner-info {
-        position: relative;
-        width: 365px;
+        margin: 0 auto;
+        position: static;
+        width: 75%;
         height: 100%;
-        left: 0%;
+        padding-top: 50px;
         padding-bottom: 70px;
     }
 
@@ -444,8 +450,18 @@ footer {
         align-items: center;
     }
 
+    .play-instant-info {
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
     .online-game-container {
         padding-top: 0px;
+    }
+
+    .game-card .image {
+        width: 60vw;
+        height: 50vh;
     }
 
     .section-title {
@@ -470,20 +486,22 @@ footer {
 
     .play-instant-container {
         width: 100%;
+        display: flex;
     }
 
     .big {
-        width: 240px;
-        height: 270px;
-        left: 0px;
-        top: 0px;
-        padding-bottom: 20px;
-        padding-left: 0px;
-        justify-content: flex-start;
+        width: 50vw;
+        height: 30vh;
+        left: 20px;
+        top: 0vh;
     }
 
     .small {
-        display: none;
+        width: 30vw;
+        height: 15vh;
+        left: -20vw;
+        top: 5vh;
+
     }
 
     .play-instant-container {
@@ -496,33 +514,33 @@ footer {
         justify-content: center;
     }
 
-    .play-instant-info {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-
     .play-instant-title,
     .play-instant-description {
         text-align: center;
-        width: 280px;
-        height: 100px;
+        width: 80%;
+        height: 70%;
         padding: 10px;
+    }
+
+    .play-instant-container {
+        padding-bottom: 7rem;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .feature {
         justify-content: center;
-        gap: 20px;
+
     }
 
     .feature-item img {
-        width: 24px;
-        height: 24px;
+        width: 20%;
+        height: 100%;
     }
 
     .feature-item {
-        max-width: 150px;
-        height: 25px;
+        width: 25vw;
+        height: 4vh;
         font-size: 0.5rem;
         color: #0B0223;
         font-weight: 600;
@@ -530,7 +548,7 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 10px;
-        border-radius: 100px;
+        border-radius: 100%;
         padding: 0px;
     }
 
@@ -545,17 +563,16 @@ footer {
 
     .game-features-container {
         display: grid;
-        grid-template-columns: repeat(3, 150px);
+        grid-template-columns: repeat(3, 25vw);
         column-gap: 10px;
         justify-content: center;
         align-items: center;
 
     }
 
-    footer {
+    .footer {
         width: 100vw;
         height: auto;
-        background-color: #0B0223;
         color: #FFF;
         justify-content: flex-start;
     }
@@ -572,24 +589,26 @@ footer {
     .social-link,
     .footer-service,
     .footer-copyright-text {
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .footer-link-description {
+        box-sizing: border-box;
         display: grid;
-        grid-template-columns: repeat(3, 100px);
-        padding: 5px 0px;
+        grid-template-columns: repeat(3, 25vw);
+        padding-top: 5vh;
+        padding-bottom:5vw;
     }
 
     .social-link {
         display: grid;
-        grid-template-columns: repeat(3, 50px);
+        grid-template-columns: repeat(3, 10vw);
         padding: 5px 0px;
     }
 
     .footer-service {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 40vw);
         padding: 5px 0px;
     }
 
@@ -688,23 +707,13 @@ footer {
 
     .game-title {
         font-size: 2rem;
+        height: 100%;
     }
 
     .play-instant-container {
         width: 100%;
     }
 
-    .big {
-        width: 240px;
-        height: 270px;
-        left: 0px;
-        top: 0px;
-        padding-bottom: 20px;
-    }
-
-    .small {
-        display: none;
-    }
 
     .play-instant-container {
         display: flex;
@@ -719,16 +728,17 @@ footer {
     .play-instant-info {
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
+        padding-bottom: 0px;
     }
 
     .play-instant-title,
     .play-instant-description {
         text-align: center;
-        width: 280px;
-        height: 100px;
     }
-
+    .play-instant-title{
+        height: auto;
+        padding-bottom: 20px;
+    }
     .feature {
         padding-left: 0px;
         padding-right: 0px;
@@ -769,10 +779,26 @@ footer {
         column-gap: 30px;
         padding-left: 0px;
         padding-right: 0px;
+        padding-top: 30vh;
+    }
+
+    .big {
+        width: 50vw;
+        height: 60vh;
+        left: 20px;
+        top: 0vh;
+    }
+
+    .small {
+        width: 25vw;
+        height: 40vh;
+        left: -10vw;
+        top: 10vh;
+
     }
 
     .footer {
-        /* width: 100%; */
+        width: 100vw;
         /* background-color: #0B0223; */
         color: #FFF;
         padding: 50px 0px;
